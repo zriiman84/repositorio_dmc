@@ -48,7 +48,7 @@ class Calculadora:
      # Función para obtener raíz de dos números
     def obtener_raiz(a : int|float, b : int|float) -> int|float:
         if(isinstance(a,(int,float)) and isinstance(b,(int,float))):
-            return round(math.pow(a,1/b),4)
+            return round(math.pow(b,1/a),4)
         else:
             raise ValueError("Debe ingresar valores numéricos enteros o flotantes.")
         
